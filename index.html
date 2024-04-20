@@ -6,63 +6,121 @@
   <title>Personal Portfolio</title>
   <!-- Link to external CSS file -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Link to SwiperJS CSS file -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
-  <header>
-    <h1>Nazlah's Homepage</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <section id="home">
-    <h2>Welcome to My Portofolio</h2>
-    <p>Selamat datang di halaman utama saya. Ini adalah tempat di mana saya berbagi informasi terbaru dan pemikiran saya.
-      Perkenalkan saya Nazlah Ayunda Syahputri Jacub mahasiswi Teknik Informatika Unsrat Angkatan 22.</p>
-  </section>
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <p>Here are some photos:</p>
-    <div class="gallery-nazlah">
-      <img src="https://www.kindpng.com/picc/m/52-528752_huruf-n-hd-png-download.png" height="100">
-      <img src="https://2.bp.blogspot.com/-LiGVCZAB088/VFIGe980QnI/AAAAAAAAFAo/OELavAdUxhw/s1600/Huruf.png" height="100">
-      <img src="https://tse3.mm.bing.net/th?id=OIP.HpjbrNw3Vn56D7C9G8qytAHaHa&pid=Api&P=0&h=180" height="100">
-      <img src="https://listimg.pinclipart.com/picdir/s/138-1388308_letter-l-clipart-5-buy-clip-art-huruf.png" height="100">
-      <img src="https://2.bp.blogspot.com/-LiGVCZAB088/VFIGe980QnI/AAAAAAAAFAo/OELavAdUxhw/s1600/Huruf.png" height="100">
-      <img src="https://i5.walmartimages.com/asr/0f9e66fe-ae5d-40bf-8d1b-634899dbba07_1.861638dd10d9ef4d31ba1e55ddf66fbd.jpeg" height="100">
-    </div>
-  </section>
-  <section id="blog">
-    <h2>Blog</h2>
-    <article>
-      <h3>Menjadi Seorang Pemrogram: Memasuki Dunia Digital</h3>
-      <p>Pemrograman adalah keterampilan kunci dalam era digital saat ini. Dengan mempelajari pemrograman, seseorang dapat membuka pintu menuju berbagai peluang karier dan berkontribusi pada inovasi teknologi yang terus berkembang. Dengan semangat belajar yang kuat dan ketekunan, siapa pun dapat menjadi bagian dari dunia yang menarik ini.</p>
-    </article>
-    <article>
-      <h3>Mengenal Dunia Pemrograman: Fondasi Digital Masa Kini</h3>
-      <p>Pemrograman, sebuah seni mengubah ide menjadi realitas digital, telah menjadi tulang punggung revolusi teknologi yang melanda dunia. Dari aplikasi di smartphone hingga infrastruktur perbankan global, pemrograman menggerakkan hampir segala aspek kehidupan modern. Dalam era di mana teknologi terus berkembang, pemrograman memainkan peran sentral dalam membentuk masa depan digital kita. Dengan memahami dasar-dasar pemrograman dan terus mengembangkan keterampilan, siapa pun dapat menjadi bagian dari revolusi teknologi yang tak pernah berhenti ini.</p>
-    </article>
-    <article>
-      <h3>Pemrograman: Mengubah Ide Menjadi Realitas Digital</h3>
-      <p>Pemrograman adalah seni dan ilmu dalam menciptakan instruksi bagi komputer. Ini memungkinkan pembangunan berbagai aplikasi, mulai dari situs web hingga perangkat lunak kompleks. Melalui bahasa pemrograman seperti Python, Java, dan lainnya, pengembang mengubah ide menjadi kode yang dapat dijalankan.
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Home Slide -->
+      <div class="swiper-slide" id="home">
+        <header class="header-background">
+          <h1>Nazlah's Homepage</h1>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <section id="home-content">
+          <h2>Welcome to My Portfolio</h2>
+          <!-- Profile Box -->
+          <div class="profile-box">
+      <img src="foto profil.jpg" alt = "Profile Picture">
+      <h3>Nazlah Ayunda Syahputri Jacub</h3>
+      <p>Mahasiswi Teknik Informatika</p>
+      <p>Selamat datang di halaman utama saya. Ini adalah tempat di mana saya berbagi informasi terbaru dan pemikiran saya.</p>
+
+        </section>
+      </div>
+      <!-- Gallery Slide -->
+      <div class="swiper-slide" id="gallery">
+        <header class="header-background">
+          <h1>Nazlah's Homepage</h1>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <section id="gallery-content">
+          <h2>Gallery</h2>
+          <p>My favorite photo collection:</p>
+          <div class="gallery-nazlah">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.5qXRM9yce5a8NReUrqgBZgAAAA&pid=Api&P=0&h=180" height="400">
+            <img src="mingyu.jpg" height="400">
+            <img src="prend.jpg" height="400">
+          </div>
+        </section>
+      </div>
+      <!-- Blog Slide -->
+      <div class="swiper-slide" id="blog">
+        <header class="header-background">
+          <h1>Nazlah's Homepage</h1>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <section id="blog-content">
+          <h2>Blog</h2>
+          <article>
+            <h3>Menjadi Seorang Pemrogram: Memasuki Dunia Digital</h3>
+            <p>Pemrograman adalah keterampilan kunci dalam era digital saat ini. Dengan mempelajari pemrograman, seseorang dapat membuka pintu menuju berbagai peluang karier dan berkontribusi pada inovasi teknologi yang terus berkembang. Dengan semangat belajar yang kuat dan ketekunan, siapa pun dapat menjadi bagian dari dunia yang menarik ini.</p>
+          </article>
+          <article>
+            <h3>Mengenal Dunia Pemrograman: Fondasi Digital Masa Kini</h3>
+            <p>Pemrograman, sebuah seni mengubah ide menjadi realitas digital, telah menjadi tulang punggung revolusi teknologi yang melanda dunia. Dari aplikasi di smartphone hingga infrastruktur perbankan global, pemrograman menggerakkan hampir segala aspek kehidupan modern. Dalam era di mana teknologi terus berkembang, pemrograman memainkan peran sentral dalam membentuk masa depan digital kita. Dengan memahami dasar-dasar pemrograman dan terus mengembangkan keterampilan, siapa pun dapat menjadi bagian dari revolusi teknologi yang tak pernah berhenti ini.</p>
+          </article>
+          <article>
+            <h3>Pemrograman: Mengubah Ide Menjadi Realitas Digital</h3>
+            <p>Pemrograman adalah seni dan ilmu dalam menciptakan instruksi bagi komputer. Ini memungkinkan pembangunan berbagai aplikasi, mulai dari situs web hingga perangkat lunak kompleks. Melalui bahasa pemrograman seperti Python, Java, dan lainnya, pengembang mengubah ide menjadi kode yang dapat dijalankan.
 
 Pemrograman tidak hanya tentang menulis kode, tetapi juga tentang pemecahan masalah, analisis logika, dan kreativitas. Dalam berbagai bidang, seperti kesehatan dan pendidikan, pemrograman digunakan untuk menghasilkan solusi yang bermanfaat.
 
 Keterampilan dalam pemrograman menjadi sangat berharga di era digital ini, dengan permintaan yang terus meningkat. Kemahiran ini tidak hanya membuka pintu karir luas, tetapi juga memungkinkan kita menjadi agen perubahan dalam dunia yang semakin terhubung secara digital.</p>
-    </article>
-  </section>
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Contact me:</p>
-    <p>Email: nazlahayunda@gmail.com</p>
-    <p>Phone: 082248558656</p>
-  </section>
-  <footer>
-    <p>&copy; 2024 Personal Portfolio. All rights reserved.</p>
-  </footer>
+          </article>
+        </section>
+      </div>
+      <!-- Contact Slide -->
+      <div class="swiper-slide" id="contact">
+        <header class="header-background">
+          <h1>Nazlah's Homepage</h1>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <section id="contact-content">
+          <h2>Contact</h2>
+          <p>Contact me:</p>
+          <p>Email: nazlahayunda@gmail.com</p>
+          <p>Phone: 082248558656</p>
+        </section>
+      </div>
+    </div>
+    <!-- Navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <!-- JavaScript for SwiperJS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Include external JavaScript file -->
+  <script src="script.js"></script>
 </body>
 </html>

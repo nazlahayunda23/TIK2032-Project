@@ -1,94 +1,165 @@
+/* Reset CSS */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-  }
-  
-  header, nav, section, article, footer {
-    padding: 20px;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-  }
-  
-  nav {
-    background-color: #444;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-  }
-  
-  section {
-    margin-top: 20px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  /* Penyesuaian tambahan */
-  header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
-  
-  section h2 {
-    color: #333;
-    font-size: 24px;
-  }
-  
-  section p {
-    color: #666;
-    line-height: 1.6;
-  }
-  
-  .gallery-nazlah img {
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  article {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 40px;
-  }
-  
-  footer p {
-    font-size: 14px;
-  }
-  
-  /* Hover efek untuk tautan navigasi */
-  nav ul li a:hover {
-    color: #ff7f50;
-  }
-  
-  /* Efek hover untuk gambar di galeri */
-  .gallery-nazlah img:hover {
-    transform: scale(1.05);
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+/* Element Styles */
+header, nav, section, article, footer {
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #444;
+  padding: 10px;
+  border-radius: 20px; /* Menambahkan sudut bulat yang lebih besar */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block; /* Menjadikan navigasi sebagai kotak */
+  margin-right: 10px; /* Jarak antar kotak navigasi */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px; /* Padding dalam kotak navigasi */
+  border-radius: 15px; /* Menambahkan sudut bulat yang sedikit */
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Warna latar belakang saat dihover */
+}
+
+
+.profile-box {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px; /* Atur lebar maksimum kotak profil */
+  margin: 0 auto; /* Atur margin otomatis di sisi kiri dan kanan untuk menengahkan kotak profil */
+}
+
+.profile-box img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-box h3 {
+  margin-bottom: 5px;
+}
+
+.profile-box p {
+  margin-bottom: 5px;
+}
+
+
+.header-background {
+  background-image: url('https://www.mejahijau.com/wp-content/uploads/2019/07/Unsrat-Manado.jpg'); /* Ganti 'link-ke-gambar.jpg' dengan URL gambar yang Anda inginkan */
+  background-size: cover;
+  background-position: center;
+  color: white; /* Sesuaikan warna teks agar kontras dengan latar belakang */
+  padding: 20px; /* Sesuaikan padding agar teks tidak berdekatan dengan tepi latar belakang */
+}
+
+/* Sesuaikan properti berikut agar teks blog tidak terpengaruh */
+#blog {
+  background-color: white; /* Atur warna latar belakang untuk menyamarkan gambar latar belakang */
+  padding: 20px; /* Tambahkan padding untuk menjaga jarak antara teks dengan tepi */
+}
+
+
+/* Gallery Styles */
+.gallery-nazlah {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery-nazlah img {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-nazlah img:hover {
+  transform: scale(1.1);
+}
+
+/* Blog Styles */
+#blog {
+  background-color: rgb(0, 0, 0); /* Ubah warna latar belakang blog sesuai kebutuhan */
+}
+
+#blog article {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff; /* Ubah warna latar belakang artikel blog sesuai kebutuhan */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+/* Background untuk halaman Home */
+#home {
+  background-image: url('sky.jpg'); /* Ganti dengan URL gambar latar belakang untuk halaman Home */
+  background-size: cover;
+  background-position: center;
+  color: #000000; /* Sesuaikan warna teks agar kontras dengan latar belakang */
+}
+
+/* Background untuk halaman Gallery */
+#gallery {
+  background-image: url('sky.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Background untuk halaman Blog */
+#blog {
+  background-image: url('sky.jpg'); /* Ganti dengan URL gambar latar belakang untuk halaman Blog */
+  background-size: cover;
+  background-position: center;
+  color: #333; /* Sesuaikan warna teks agar kontras dengan latar belakang */
+}
+
+/* Background untuk halaman Contact */
+#contact {
+  background-image: url('sky.jpg'); /* Ganti dengan URL gambar latar belakang untuk halaman Contact */
+  background-size: cover;
+  background-position: center;
+  color: #000000; /* Sesuaikan warna teks agar kontras dengan latar belakang */
+}
