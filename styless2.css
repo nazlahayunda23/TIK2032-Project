@@ -1,0 +1,56 @@
+/* styles.css */
+.header-background {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+#blog-content {
+    margin: 20px;
+}
+
+.blog-post {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.blog-post h3 {
+    margin: 0;
+    color: #333;
+}
+
+.blog-post p {
+    color: #555;
+}
+
+.blog-post a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
