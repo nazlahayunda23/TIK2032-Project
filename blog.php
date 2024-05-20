@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "root"; // Ubah jika Anda menggunakan username yang berbeda
-$password = ""; // Ubah jika Anda menggunakan password yang berbeda
+$username = "root";
+$password = ""; 
 $dbname = "personalportfolio";
 
 // Membuat koneksi
@@ -26,7 +26,7 @@ $result = $conn->query($sql);
     <link rel="stylesheet" href="styless2.css">
 </head>
 <body>
-    <!-- Content for Blog page -->
+    
     <header class="header-background">
         <h1>Nazlah's Homepage</h1>
     </header>
